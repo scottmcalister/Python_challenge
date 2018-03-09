@@ -12,7 +12,7 @@ candidate_options = []
 candidate_votes = {}
 
 with open(upload_file) as election_data:
-    reader = csv.DictReader(election_data)
+    reader = csv.reader(election_data)
 
     for row in reader:
         votes = votes + 1
